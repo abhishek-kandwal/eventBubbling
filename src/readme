@@ -1,0 +1,26 @@
+event bubbling & event capturing :
+=> when we have multiple events registered.
+  eg: body>parent(div)>>child1(div),child2(div).
+      we have 2-events ,both are clicked event with the div.
+      event1- in the parent
+              [ console.log("parent") ]
+      event2- in the child1
+              [ console.log("child1") ]
+      
+  so, in event Bubbling- {
+    - if we click the child1,
+      >>> "child1"
+      >>> "parent"
+    - if we click the parent
+      >>> "parent"
+    => this is event bubbling first the inner event executes then the outer one.
+  }
+  
+  so, in event capturing- {
+    - it becames opposite of bubbling
+    - if we click the child1,
+      >>> "parent"
+      >>> "child"
+    - if we click the parent,
+      >>> "parent"
+  }
