@@ -7,7 +7,7 @@ event bubbling & event capturing :
       event2- in the child1
               [ console.log("child1") ]
       
-  so, in event Bubbling- {
+  so, in event Bubbling- { [buttom-element to top]
     - if we click the child1,
       >>> "child1"
       >>> "parent"
@@ -16,7 +16,7 @@ event bubbling & event capturing :
     => this is event bubbling first the inner event executes then the outer one.
   }
   
-  so, in event capturing- {
+  so, in event capturing- { [top-element to bottom]
     - it becames opposite of bubbling
     - if we click the child1,
       >>> "parent"
